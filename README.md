@@ -1,2 +1,6 @@
-# setting
-setting files
+# setting file
+
+---
+
+- Sublime Text 
+- Eslint 
