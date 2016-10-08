@@ -15,50 +15,43 @@ command + shift + p  install
 - SublimeTmpl（template）
 - emmet（html -> tab; js -> command+e)
 <pre>
-{
-    "keys": ["super+e"],
+//配置
+//打开菜单Preferences -> Package Settings -> Emmet -> Key Bindings - User
+[{
+    "keys": ["tab"],
     "command": "expand_abbreviation_by_tab",
-    // put comma-separated syntax selectors for which 
-    // you want to expandEmmet abbreviations into "operand" key 
-    // instead of SCOPE_SELECTOR.
-    // Examples: source.js, text.html - source
     "context": [{
-            "operand": "source.js",
-            "operator": "equal",
-            "match_all": true,
-            "key": "selector"
-        },
-        // run only if there's no selected text
-        {
-            "match_all": true,
-            "key": "selection_empty"
-        },
-        // don't work if there are active tabstops
-        {
-            "operator": "equal",
-            "operand": false,
-            "match_all": true,
-            "key": "has_next_field"
-        },
-        // don't work if completion popup is visible and you
-        // want to insert completion with Tab. If you want to
-        // expand Emmet with Tab even if popup is visible -- 
-        // remove this section
-        {
-            "operand": false,
-            "operator": "equal",
-            "match_all": true,
-            "key": "auto_complete_visible"
-        }, {
-            "match_all": true,
-            "key": "is_abbreviation"
-        }
-    ]
-}
+        "operand": "source.js",
+        "operator": "equal",
+        "match_all": true,
+        "key": "selector"
+    },
+    {
+        "match_all": true,
+        "key": "selection_empty"
+    }, 
+    {
+        "operator": "equal",
+        "operand": false,
+        "match_all": true,
+        "key": "has_next_field"
+    },
+    {
+        "operand": false,
+        "operator": "equal",
+        "match_all": true,
+        "key": "auto_complete_visible"
+    }, {
+        "match_all": true,
+        "key": "is_abbreviation"
+    }]
+}]
 </pre>
 
 - jsformat
 <pre>
+//配置
+//打开菜单Preferences -> Package Settings -> JsFormat -> Settings - User，将下面代码贴进去保存。
 {
     "e4x": true,
     // jsformat options
