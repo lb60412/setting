@@ -18,7 +18,7 @@ command + shift + p  install
 //配置
 //打开菜单Preferences -> Package Settings -> Emmet -> Key Bindings - User
 [{
-    "keys": ["tab"],
+    "keys": ["super+e"],
     "command": "expand_abbreviation_by_tab",
     "context": [{
         "operand": "source.js",
