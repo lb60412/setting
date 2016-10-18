@@ -1,6 +1,6 @@
 # eslint setting
 
-
+## 先设置babel开发环境，然后再设置eslint
 -  sublime install
 command + shift + p
 <pre>
@@ -11,6 +11,7 @@ SublimeLinter-contrib-eslint
 - nodejs install
 <pre>
 sudo npm install eslint babel-eslint -g
+sudo npm install eslint-loader eslint-plugin-react --save-dev
 </pre>
 
 - .eslintrc file 
