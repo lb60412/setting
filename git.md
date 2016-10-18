@@ -1,14 +1,17 @@
 
 - gitlab setting
  - create rsa
+ <pre>
  	$ ssh-keygen -t rsa -C "Email"
  	$ Enter file in which to save the key (/Users/lv/.ssh/id_rsa): /Users/lv/.ssh/id_rsa_gitlab
-
-- gitHUB setting
+ </pre>
+ 
+- gitHub setting
  - create rsa
+ <pre>
  	$ ssh-keygen -t rsa -C "Email"
  	$ Enter file in which to save the key (/Users/lv/.ssh/id_rsa): /Users/lv/.ssh/id_rsa_github
-
+ </pre>
 
 - setting ssh config
 	$ touch config
