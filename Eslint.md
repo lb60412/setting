@@ -1,17 +1,34 @@
 # eslint setting
 
 ## 先设置babel开发环境，然后再设置eslint
+- nodejs install
+<pre>
+//全局安装，不用在每个项目内安装
+$ sudo npm install babel-cli eslint babel-eslint -g
+$ sudo npm install eslint-plugin-react -g
+//项目内安装，针对单个项目
+$ sudo npm install babel-cli eslint babel-eslint --save-dev
+$ sudo npm install eslint-plugin-react --save-dev
+</pre>
+
 -  sublime install
 command + shift + p
 <pre>
+eslint
+babel
 SublimeLinter
 SublimeLinter-contrib-eslint
 </pre>
 
-- nodejs install
+-  vscode install
+command + shift + p
 <pre>
-sudo npm install eslint babel-eslint -g
-sudo npm install eslint-loader eslint-plugin-react --save-dev
+$ ext install vscode-icons
+$ ext install vscode-babel-coloring
+$ ext install vscode-eslint
+$ ext install ReactSnippets
+$ ext install JavaScriptSnippets
+$ ext install vscode-JS-CSS-HTML-formatter
 </pre>
 
 - .eslintrc file 
