@@ -5,18 +5,26 @@ install Sublime Text package control
 [package control](https://packagecontrol.io/installation)
 
 -
-
-command + shift + p  install
-
+### 常用插件
+- Babel
 - ES6-Toolkit（ES6代码提示)
 - DocBlokr（代码注释/** -> tab）
 - sass
 - HTML-CSS-JS Prettify （格式化）
+- jsformat
+- CSScomb （css属性顺序格式化）
 - SublimeTmpl（template）
+- JavaScript & NodeJS Snippets (js代码提示)
+- emmet
+
+---
+### react环境搭建
+- React ES6 Snippets
+- React and React Router Snippets
 - emmet（html -> tab; js -> command+e)
 <pre>
 //配置
-//打开菜单Preferences -> Package Settings -> Emmet -> Key Bindings - User
+//打开菜单 preferences -> Key bindings - Users
 [{
     "keys": ["super+e"],
     "command": "expand_abbreviation_by_tab",
