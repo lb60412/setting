@@ -44,6 +44,6 @@ $ git add .
 $ git commit -m "new info"
 $ git tag -a v0.0.9 -m "v0.0.9" 
 $ git push origin master
-$ git push origin --tag
+$ git push origin --tags
 ```
 	
