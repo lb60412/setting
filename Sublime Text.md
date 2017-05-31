@@ -11,7 +11,7 @@ install Sublime Text package control
 - DocBlokr（代码注释/** -> tab）
 - sass
 - HTML-CSS-JS Prettify （格式化）
-- jsformat
+- jsfmt
 - CSScomb （css属性顺序格式化）
 - SublimeTmpl（template）
 - JavaScript & NodeJS Snippets (js代码提示)
@@ -56,13 +56,40 @@ install Sublime Text package control
 }]
 </pre>
 
-- jsformat
+- jsfmt
 <pre>
 //配置
-//打开菜单Preferences -> Package Settings -> JsFormat -> Settings - User，将下面代码贴进去保存。
+//打开菜单Preferences -> Package Settings -> Sublime JSFMAT -> Settings - User，将下面代码贴进去保存。
 {
-    "e4x": true,
-    // jsformat options
-    "format_on_save": true,
+    "autoformat": false,
+    "extensions": ["js", "sublime-settings"],
+    "options": {
+        "preset": "jquery",
+        "indent": {
+            "value": "    "
+        },
+        // plugins included
+        "plugins": [
+            // "esformatter-quotes",
+            // "esformatter-semicolons",
+            // "esformatter-braces",
+            // "esformatter-dot-notation"
+        ]
+    },
+    "options-JSON": {
+        "plugins": [
+            "esformatter-quotes"
+        ],
+        "quotes": {
+            "type": "double"
+        }
+    },
+    "alert-errors": true,
+    "node-path": "node",
+    "ignore-selection": false
 }
+</pre>
+<pre>
+//快捷键设置 Preferences -> Key Bindings - User
+{"keys":["ctrl+q"],"command":"format_javascript"}
 </pre>
