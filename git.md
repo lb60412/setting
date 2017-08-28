@@ -17,7 +17,7 @@
 	$ touch config
 
 <pre>	
-	#gitlab
+#gitlab
 Host gitlab.moji.com 
 	HostName gitlab.moji.com 
 	Port 20443
@@ -28,11 +28,18 @@ Host github.com
         HostName github.com   
         Port 22
 	IdentityFile ~/.ssh/id_rsa_github
+
+#git.oschina.net
+Host git.oschina.net
+        HostName git.oschina.net   
+        Port 22
+	IdentityFile ~/.ssh/id_rsa_oschina
 </pre>
 
 # testing 
 	$ ssh -T git@gitlab.moji.com
 	$ ssh -T git@github.com
+	$ ssh -T git@git.oschina.net
 	
 	
 ---
