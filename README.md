@@ -2,3 +2,4 @@
 
 - Sublime Text 
 - Eslint 
+- babel
