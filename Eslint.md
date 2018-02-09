@@ -4,20 +4,18 @@
 - nodejs install
 <pre>
 //全局安装，不用在每个项目内安装
-$ sudo npm install babel-cli eslint babel-eslint -g
-$ sudo npm install eslint-plugin-react -g
+$ sudo npm install babel-cli eslint babel-eslint eslint-plugin-react -g
 //项目内安装，针对单个项目
-$ sudo npm install babel-cli eslint babel-eslint --save-dev
-$ sudo npm install eslint-plugin-react --save-dev
+$ sudo npm install babel-cli eslint babel-eslint eslint-plugin-react --save-dev
 </pre>
 
 -  sublime install
 command + shift + p
 <pre>
-eslint
-babel
-SublimeLinter
-SublimeLinter-contrib-eslint
+[eslint](https://packagecontrol.io/packages/ESLint)
+[babel](https://packagecontrol.io/packages/Babel)
+[SublimeLinter](https://packagecontrol.io/packages/SublimeLinter)
+[SublimeLinter-eslint](https://packagecontrol.io/packages/SublimeLinter-eslint)
 </pre>
 
 -  vscode install
